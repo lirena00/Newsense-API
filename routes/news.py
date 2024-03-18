@@ -3,7 +3,6 @@ from fastapi import APIRouter
 import re
 import html
 import json
-from bs4 import BeautifulSoup as html
 
 
 tags_metadata = ["Misc"]
