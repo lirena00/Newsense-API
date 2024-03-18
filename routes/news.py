@@ -35,6 +35,7 @@ async def get_news(category: str = "top", page: int = 1):
         full_article = news['news_obj']['source_url']
         tags = news['news_obj']['relevancy_tags']
         time= news ['news_obj']['created_at']
+        description= news['news_obj']['content']
 
         mapping = {
             "title": title,
@@ -42,6 +43,7 @@ async def get_news(category: str = "top", page: int = 1):
             "source": source,
             "tags": tags,
             "time": time,
+            "description": description,
             "full_article": full_article
         }
         news_out.append(mapping)
