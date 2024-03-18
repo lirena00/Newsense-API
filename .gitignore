@@ -1,0 +1,12 @@
+//pycache files
+__pycache__
+
+//vscode files
+.vscode
+
+//build files
+build
+dist
+*.egg-info
+
+//test files                                                              
