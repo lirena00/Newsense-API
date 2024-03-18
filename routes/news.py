@@ -24,7 +24,7 @@ async def get_news(category: str = "top", page: int = 1):
     news_data = res.json()
     news_out = []
     
-    if category == "all":
+    if category == "top":
         news_list = news_data['data']['news_list']
     else:
         news_list = news_data['data']['suggested_news']
