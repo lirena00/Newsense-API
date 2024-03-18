@@ -9,7 +9,7 @@ __version__ = "1.0.0"
 
 app = FastAPI(
 	title="Newsense API",
-	description="A  API made by  [LiReNa](https://github.com/LiReNa00)"
+	description="An API made by  [LiReNa](https://github.com/LiReNa00)"
 )
 
 
