@@ -9,10 +9,11 @@ tags_metadata = ["Misc"]
 news= APIRouter(tags=tags_metadata)
         
 @news.get("/news")
-async def get_news(category: str = "all", page: int = 1):
+async def get_news(category: str = "top", page: int = 1):
 
-    if category == "all":
-        url = "https://inshorts.com/api/en/news?category=all_news&max_limit=10&include_card_data=true"
+    if category == "top":
+        #url = "https://inshorts.com/api/en/news?category=all_news&max_limit=10&include_card_data=true"
+        url ="https://inshorts.com/api/en/news?category=top_stories&max_limit=10&include_card_data=true"
     else:
         url = f"https://inshorts.com/api/en/search/trending_topics/{category}?page=/{page}"
     headers={
